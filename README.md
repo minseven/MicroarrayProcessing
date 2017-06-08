@@ -1,18 +1,18 @@
-### Welcome to MicroarrayProcessing
+## Welcome to MicroarrayProcessing
 
 MicroarrayProcessing is to automate microarray data processing for multiple public project data.
 
-## Step 1.
+### Step 1.
 
 - Let's assume we have data from two projects of GSE15059 and GSE28320 only. Note that two projects are for E. coli. 
 - Install R and library limmma. 
 - clone this repo on your local.
 
-## Step 2. Download raw data from GEO
+### Step 2. Download raw data from GEO
 
 I first download raw-data files from GEO (you might be able to do this with R package GEOquery for most cases. But please note that there are some cases you can't download raw data with GEOquery.) and saved raw data files of each project into separate folders of GSE15059_RAW and GSE28320_RAW.
 
-## Step 3. Write up a metadata file.
+### Step 3. Write up a metadata file.
 
 Then I write up a metadata file that shows information about how to process two project data. The content of this file should be in metadata.txt. There are 9 columns and 19 rows (one header and 18 samples). The descriptions of columns are:
 - SampleID. Unique identifier for the sample. This SampleID will be used for naming the output file for each sample. For example, if S0001 is SampleID, then the output will be S0001.txt.
@@ -37,7 +37,7 @@ Then I write up a metadata file that shows information about how to process two 
 - DirName. The directory name that houses the sample raw-data.
 - FileName. The file name of the sample raw-data.
 
-## Step 4.
+### Step 4. Run the command.
 
-I run the R script (RunDataProcessing.R) by Rscript RunDataProcessing.R metadata.txt. This script will produce 18 gene expression files where the first column is ID and the second column is gene expression level.
+I run the R script (RunDataProcessing.R) by <code>Rscript RunDataProcessing.R metadata.txt</code>. This script will produce 18 gene expression files where the first column is ID and the second column is gene expression level.
 
