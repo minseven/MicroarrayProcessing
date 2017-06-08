@@ -1,0 +1,19 @@
+SampleID,Ch,SourceType,R,G,Rb,Gb,DirName,FileName
+S0001,1,genepix,na,na,na,na,GSE15059_RAW,GSM376029.gpr.gz
+S0002,2,genepix,na,na,na,na,GSE15059_RAW,GSM376029.gpr.gz
+S0003,1,genepix,na,na,na,na,GSE15059_RAW,GSM376033.gpr.gz
+S0004,2,genepix,na,na,na,na,GSE15059_RAW,GSM376033.gpr.gz
+S0005,1,genepix,na,na,na,na,GSE15059_RAW,GSM376035.gpr.gz
+S0006,2,genepix,na,na,na,na,GSE15059_RAW,GSM376035.gpr.gz
+S0007,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700471_Sigma70_Heat_Shock_LB1.gpr.gz
+S0008,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700471_Sigma70_Heat_Shock_LB1.gpr.gz
+S0009,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700472_Sigma70_Heat_Shock_LB2.gpr.gz
+S0010,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700472_Sigma70_Heat_Shock_LB2.gpr.gz
+S0011,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700473_Sigma70_Heat_Shock_LB3.gpr.gz
+S0012,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700473_Sigma70_Heat_Shock_LB3.gpr.gz
+S0013,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700474_Sigma70_Heat_Shock_LP1.gpr.gz
+S0014,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700474_Sigma70_Heat_Shock_LP1.gpr.gz
+S0015,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700475_Sigma70_Heat_Shock_LP2.gpr.gz
+S0016,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700475_Sigma70_Heat_Shock_LP2.gpr.gz
+S0017,1,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700476_Sigma70_Heat_Shock_LP3.gpr.gz
+S0018,2,generic,F635 Median,F532 Median,B635 Median,B532 Median,GSE28320_RAW,GSM700476_Sigma70_Heat_Shock_LP3.gpr.gz
