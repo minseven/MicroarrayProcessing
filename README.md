@@ -1,14 +1,18 @@
+### Welcome to MicroarrayProcessing
+
+MicroarrayProcessing is to automate microarray data processing for multiple public project data.
+
 ## Step 1.
 
 - Let's assume we have data from two projects of GSE15059 and GSE28320 only. Note that two projects are for E. coli. 
 - Install R and library limmma. 
 - clone this repo on your local.
 
-## Step 2. 
+## Step 2. Download raw data from GEO
 
-I first download raw-data files from GEO (you might be able to do this with R package GEOquery for most cases as you used before. But please note that there are some cases you can't download raw data with GEOquery.) and saved raw data files of each project into separate folders of GSE15059_RAW and GSE28320_RAW.
+I first download raw-data files from GEO (you might be able to do this with R package GEOquery for most cases. But please note that there are some cases you can't download raw data with GEOquery.) and saved raw data files of each project into separate folders of GSE15059_RAW and GSE28320_RAW.
 
-## Step 3. 
+## Step 3. Write up a metadata file.
 
 Then I write up a metadata file that shows information about how to process two project data. The content of this file should be in metadata.txt. There are 9 columns and 19 rows (one header and 18 samples). The descriptions of columns are:
 - SampleID. Unique identifier for the sample. This SampleID will be used for naming the output file for each sample. For example, if S0001 is SampleID, then the output will be S0001.txt.
