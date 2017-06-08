@@ -21,20 +21,21 @@ Then I write up a metadata file that shows information about how to process two 
 * I was able to figure out by looking at the extension of raw file. For example, files ending with gpr or gpr.gz are genepix.
 * Or the source information is indicated in the header of the file. 
 * Note that some files don't follow this rule if the raw files were produced from customized arrays. GSE28320 is an example. Then we first set SourceType as "generic". Then to properly process these types of files, it is a key to look into the header and get the names for the four columns. The four columns are
-   1) foreground intensities of Red channel (denoted as R)
-   2) foreground intensities of Green channel (denoted as G)
-   3) background intensities of Red channel (denoted as Rb)
-   4) background intensities of Green channel (denoted as Gb).
+   * foreground intensities of Red channel (denoted as R)
+   * foreground intensities of Green channel (denoted as G)
+   * background intensities of Red channel (denoted as Rb)
+   * background intensities of Green channel (denoted as Gb).
+   
    There can be variety of column names. In the example of GSE28320, "F635 Median", "F532 Median", "B635 Median", "B532 Median" indicate R, G, Rb, Gb, respectively. In this example, F denotes Foreground, B denotes Background, 635, 532 are wavelengths of flurorescence and 635 indicates Red signal, whereas 532 indicates Green signal. Different project might name the columns differently. I can give you more examples of column names (in the order of R, G, Rb, Gb) below. The general idea is that Median is preferred over Mean, we only use Mean when Median is not available. Channel 2, Cy5, Wavelength of 6XX all correspond to Red channel. Likewise, Channel 1, Cy3, Wavelength of 5XX all correspond to Green channel. You could tell whether column is for foreground signal (SIG, F, Signal, and etc) or for background signal (BKD, B, Bkg, and etc.) pretty easily. 
-    * R="F633 Median",G="F543 Median",Rb="B633 Median",Gb="B543 Median"
-    * R="F685 Median",G="F580 Median",Rb="B685 Median",Gb="B580 Median"
-    * R="CH2_SIG_MEAN",G="CH1_SIG_MEAN",Rb="CH2_BKD_MEAN",Gb="CH1_BKD_MEAN"
-    * R="CH2",G="CH1",Rb="CH2_bg",Gb="CH1_bg"
-    * R="Cy5 Signal",G="Cy3 Signal",Rb="Cy5 Background",Gb="Cy3 Background"
-    * R="CH2I_MEDIAN",G="CH1I_MEDIAN",Rb="CH2B_MEDIAN",Gb="CH1B_MEDIAN"
-    * R="MedA",G="MedB",Rb="MedBkgA",Gb="MedBkgB"
-    * R="CH2_INTENSITY",G="CH1_INTENSITY",Rb="CH2_BK",Gb="CH1_BK"
-    * R="SpotMedian-635",G="SpotMedian-532",Rb="BkgMedian-635",Gb="BkgMedian-532"
+   * R="F633 Median",G="F543 Median",Rb="B633 Median",Gb="B543 Median"
+   * R="F685 Median",G="F580 Median",Rb="B685 Median",Gb="B580 Median"
+   * R="CH2_SIG_MEAN",G="CH1_SIG_MEAN",Rb="CH2_BKD_MEAN",Gb="CH1_BKD_MEAN"
+   * R="CH2",G="CH1",Rb="CH2_bg",Gb="CH1_bg"
+   * R="Cy5 Signal",G="Cy3 Signal",Rb="Cy5 Background",Gb="Cy3 Background"
+   * R="CH2I_MEDIAN",G="CH1I_MEDIAN",Rb="CH2B_MEDIAN",Gb="CH1B_MEDIAN"
+   * R="MedA",G="MedB",Rb="MedBkgA",Gb="MedBkgB"
+   * R="CH2_INTENSITY",G="CH1_INTENSITY",Rb="CH2_BK",Gb="CH1_BK"
+   * R="SpotMedian-635",G="SpotMedian-532",Rb="BkgMedian-635",Gb="BkgMedian-532"
 - R. The column name corresponding to foreground intensities of Red channel. 
 - G. The column name corresponding to foreground intensities of Green channel.
 - Rb. The column name corresponding to background intensities of Red channel.
