@@ -45,5 +45,9 @@ Then I write up a metadata file that shows information about how to process two 
 
 ### Step 4. Run the command.
 
-I run the R script (RunDataProcessing.R) by <code>Rscript RunDataProcessing.R metadata.txt</code>. This script will produce 18 gene expression files where the first column is ID and the second column is gene expression level.
+I run the R script (RunDataProcessing.R) by 
+
+<code>Rscript RunDataProcessing.R metadata.txt</code>. 
+
+This script will produce 18 gene expression files where the first column is ID and the second column is gene expression level.
 
